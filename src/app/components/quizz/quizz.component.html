@@ -1,3 +1,25 @@
 <div class="quizz_container">
+    <div class="quizz_logo">
+        <img src="assets/img/logo-buzz.png" alt="Logo">
+        <h3>{{ title }}</h3>
+    </div>
 
+    <div class="quizz_questions" *ngIf="!showResult">
+        <h3>{{ questions[currentQuestionIndex]?.question }}</h3>
+    </div>
+
+    <div class="quizz_options" *ngIf="questions.length > 0 && !showResult">
+        <button
+            *ngFor="let option of questions[currentQuestionIndex]?.options"
+            (click)="selectOption(option.alias)"
+            class="btn-option"
+        >
+            {{ option.name }}
+        </button>
+    </div>
+
+    <div class="quizz_results" *ngIf="showResult">
+        <h1>O seu resultado é:</h1>
+        <p>{{ resultMessage }}</p>
+    </div>
 </div>
