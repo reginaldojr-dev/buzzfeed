@@ -5,7 +5,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a0d41; /* Fundo roxo escuro */
+    background-color: #311b73; /* Fundo roxo escuro */
     font-family: Arial, sans-serif;
 }
 
@@ -67,9 +67,15 @@ html, body {
 
 /* Resultado final */
 .quizz_results {
-    margin-top: 20px;
+    margin-top: 30px;
+    color: black;
 }
 
 .quizz_results h1 {
     color: #e50914;
+}
+
+.quizz_results p{
+    color: #e50914;
+    font-size: larger;
 }
