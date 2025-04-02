@@ -9,10 +9,9 @@ Este é um projeto de quiz inspirado no estilo BuzzFeed, realizado para o bootca
 - Exibição do resultado final após a última pergunta.
 
 ## 🛠 Tecnologias Utilizadas
-- **Angular** (versão 15+)
+- **Angular** (versão 19.2.5)
 - **TypeScript**
 - **HTML5 e CSS3**
-- **Bootstrap** (ou CSS puro para estilização)
 - **JSON** (para armazenar perguntas e respostas)
 
 ## 📁 Estrutura do Projeto
